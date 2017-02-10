@@ -16,7 +16,7 @@ library("ggplot2")
 library("ggthemes")
 library("Runuran")
 
-###################################################### Question 1 ##############################################
+####################################################################################################
 
 ## Logs of the target and candidate closed forms show candidate has fatter tails
 ## So candidate actually dominates target
@@ -171,7 +171,7 @@ hist(reshaped.sample.sir, breaks = seq(-20,20,0.5), freq = FALSE, main = 'Histog
 x = seq(-20, 20, 0.5)
 lines(x, unscaled.targ(x), col="red")
 
-###################################################### Question 2 ##############################################
+####################################################################################################
 
 unscaled.targ.2 = function(x){0.75*exp(-0.5*(x-3)^2) + 0.25*exp(-0.25*(x-6)^2)}
 ## I converted the N(4, 3^2) into a closed form function to make things easier
